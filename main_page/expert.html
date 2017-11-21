@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+          content="Cybri helps connect skilled university graduates and seasoned professionals with the employers that need them.">
+    <meta name="author" content="Cybri"/>
+    <title> | Cybri</title>
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/base.css" rel="stylesheet">
+    <link href="static/css/plugin/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="static/css/plugin/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="static/static_templates/css/dashboard/dialog.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="static/images/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="static/images/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/images/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="/static/images/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="static/images/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+          href="/static/images/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="static/images/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="static/images/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-128.png" sizes="128x128"/>
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="static/images/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="static/images/favicon/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="static/images/favicon/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="static/images/favicon/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="static/images/favicon/mstile-310x310.png"/>
+</head>
+<body id="create-profile" class="dialog-template">
+<div class="form-wrap"><a href="/"><img src="static/static_templates/images/logo.svg" class="logo" alt="Cybri"/></a>
+    <div class="container">
+        <div class="col-xs-12">
+            <div class="vertical-form col-md-8 sign-up">
+                <legend>
+                    Complete <b>your profile</b><span> You'll be all set in less than two minutes</span></legend>
+                <form method="post" class="user-form" enctype="multipart/form-data"><input type='hidden'
+                                                                                           name='csrfmiddlewaretoken'
+                                                                                           value='JZAEFCpq8wnCO3xwDne0A14IoId3WMgylru2CmlbFK6czdH9aiitUG73lmJvr3wM'/>
+                    <div class="step first-step animated active">
+                        <div class="step-count"><span class="text">1</span></div>
+                        <div class="form-group ">
+                            <ul id="id_user_type">
+                                <li><label for="id_user_type_0"><input class="form-control" id="id_user_type_0"
+                                                                       name="user_type" placeholder="None" type="radio"
+                                                                       value="specialists" required/></label></li>
+                                <li><label for="id_user_type_1"><input class="form-control" id="id_user_type_1"
+                                                                       name="user_type" placeholder="None" type="radio"
+                                                                       value="companies" required/></label></li>
+                            </ul>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6 pln prs">
+                            <div class="form-group "><input class="form-control" id="id_first_name" name="first_name"
+                                                            placeholder="First name" type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 prn pls">
+                            <div class="form-group "><input class="form-control" id="id_last_name" name="last_name"
+                                                            placeholder="Last name" type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group "><input autofocus="" class="form-control" id="id_email" name="email"
+                                                        placeholder="Email" type="email" required/>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="col-md-6 pln prs">
+                            <div class="form-group "><input class="form-control" id="id_password1" name="password1"
+                                                            placeholder="Password" type="password" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 prn pls">
+                            <div class="form-group "><input class="form-control" data-match="#id_password1"
+                                                            id="id_password2" name="password2"
+                                                            placeholder="Password confirmation" type="password"
+                                                            required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="text-center"><a href="#second-step" class="btn btn-info start-step mas">Next
+                            step</a></div>
+                    </div>
+                    <div class="specialists spec-user-form" id="specialists">
+                        <div id="second-step--specialists" class="step second-step animated">
+                            <div class="step-count between"><span class="text">2</span></div>
+                            <legend><span> Please provide your location information </span></legend>
+                            <input id="id_location-TOTAL_FORMS" name="location-TOTAL_FORMS" type="hidden"
+                                   value="1"/><input id="id_location-INITIAL_FORMS" name="location-INITIAL_FORMS"
+                                                     type="hidden" value="0"/><input id="id_location-MIN_NUM_FORMS"
+                                                                                     name="location-MIN_NUM_FORMS"
+                                                                                     type="hidden" value="1"/><input
+                                id="id_location-MAX_NUM_FORMS" name="location-MAX_NUM_FORMS" type="hidden" value="1"/>
+                            <div class="form-group "><label for="id_location-0-country">Country:</label><input
+                                    class="form-control" id="id_location-0-country" maxlength="100"
+                                    name="location-0-country" placeholder="Country" type="text" value="USA" readonly/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_location-0-state">State:</label><input
+                                    class="form-control" id="id_location-0-state" maxlength="100"
+                                    name="location-0-state" placeholder="State" type="text"/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_location-0-city">City:</label><input
+                                    class="form-control" id="id_location-0-city" maxlength="100" name="location-0-city"
+                                    placeholder="City" type="text"/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_phone">Phone:</label><input class="form-control"
+                                                                                                id="id_phone"
+                                                                                                maxlength="15"
+                                                                                                name="phone"
+                                                                                                pattern="\(?\d{3}\)?[-\.\*]? *\d{3}[-\.\*]? *-?\d{4}"
+                                                                                                placeholder="(541) 754-3010"
+                                                                                                type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><a href="#third-step--specialists"
+                                                        class="btn btn-info  btn-next mas">Next step</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="third-step--specialists" class="step third-step animated">
+                            <div class="step-count between"><span class="text">3</span></div>
+                            <legend><span> Please share your skills, services, and certificates</span></legend>
+                            <div class="form-group "><label for="id_skills">Skills:</label><select multiple="multiple"
+                                                                                                   class="form-control skills costume"
+                                                                                                   id="id_skills"
+                                                                                                   name="skills"
+                                                                                                   placeholder="Skills"
+                                                                                                   required="">
+                                <option value="1"
+                                        data-content="<span class='label label-success'>Application Security <span class='icon-cross' data-id='1'></span></span>">
+                                    Application Security
+                                </option>
+                                <option value="2"
+                                        data-content="<span class='label label-success'>Biometrics <span class='icon-cross' data-id='2'></span></span>">
+                                    Biometrics
+                                </option>
+                                <option value="3"
+                                        data-content="<span class='label label-success'>Computer Forensic Techniques and Methodologies <span class='icon-cross' data-id='3'></span></span>">
+                                    Computer Forensic Techniques and Methodologies
+                                </option>
+                                <option value="4"
+                                        data-content="<span class='label label-success'>Cyber Security and Communication Domain <span class='icon-cross' data-id='4'></span></span>">
+                                    Cyber Security and Communication Domain
+                                </option>
+                                <option value="5"
+                                        data-content="<span class='label label-success'>Data Leak Prevention <span class='icon-cross' data-id='5'></span></span>">
+                                    Data Leak Prevention
+                                </option>
+                                <option value="6"
+                                        data-content="<span class='label label-success'>Disk and File level Encryption Solution <span class='icon-cross' data-id='6'></span></span>">
+                                    Disk and File level Encryption Solution
+                                </option>
+                                <option value="7"
+                                        data-content="<span class='label label-success'>Data and Trafic Analysis <span class='icon-cross' data-id='7'></span></span>">
+                                    Data and Trafic Analysis
+                                </option>
+                                <option value="8"
+                                        data-content="<span class='label label-success'>Diverse Device Configuration Ability <span class='icon-cross' data-id='8'></span></span>">
+                                    Diverse Device Configuration Ability
+                                </option>
+                                <option value="9"
+                                        data-content="<span class='label label-success'>Ethnical Hacking <span class='icon-cross' data-id='9'></span></span>">
+                                    Ethnical Hacking
+                                </option>
+                                <option value="10"
+                                        data-content="<span class='label label-success'>Forensic Analysis <span class='icon-cross' data-id='10'></span></span>">
+                                    Forensic Analysis
+                                </option>
+                                <option value="11"
+                                        data-content="<span class='label label-success'>Foundation Network Infastructure <span class='icon-cross' data-id='11'></span></span>">
+                                    Foundation Network Infastructure
+                                </option>
+                                <option value="12"
+                                        data-content="<span class='label label-success'>Foundation Security Configuration <span class='icon-cross' data-id='12'></span></span>">
+                                    Foundation Security Configuration
+                                </option>
+                                <option value="13"
+                                        data-content="<span class='label label-success'>Governance <span class='icon-cross' data-id='13'></span></span>">
+                                    Governance
+                                </option>
+                                <option value="14"
+                                        data-content="<span class='label label-success'>Indentifying Security Events <span class='icon-cross' data-id='14'></span></span>">
+                                    Indentifying Security Events
+                                </option>
+                                <option value="15"
+                                        data-content="<span class='label label-success'>Identity &amp; Access Managment <span class='icon-cross' data-id='15'></span></span>">
+                                    Identity &amp; Access Managment
+                                </option>
+                                <option value="16"
+                                        data-content="<span class='label label-success'>Incident Handling &amp; Analysis <span class='icon-cross' data-id='16'></span></span>">
+                                    Incident Handling &amp; Analysis
+                                </option>
+                                <option value="17"
+                                        data-content="<span class='label label-success'>Incident Response <span class='icon-cross' data-id='17'></span></span>">
+                                    Incident Response
+                                </option>
+                                <option value="18"
+                                        data-content="<span class='label label-success'>Instrutsion Detection an Prevention <span class='icon-cross' data-id='18'></span></span>">
+                                    Instrutsion Detection an Prevention
+                                </option>
+                                <option value="19"
+                                        data-content="<span class='label label-success'>Litigation Support (e-discovery) <span class='icon-cross' data-id='19'></span></span>">
+                                    Litigation Support (e-discovery)
+                                </option>
+                                <option value="20"
+                                        data-content="<span class='label label-success'>Network Security <span class='icon-cross' data-id='20'></span></span>">
+                                    Network Security
+                                </option>
+                                <option value="21"
+                                        data-content="<span class='label label-success'>Open Sourse Computer Forensics <span class='icon-cross' data-id='21'></span></span>">
+                                    Open Sourse Computer Forensics
+                                </option>
+                                <option value="22"
+                                        data-content="<span class='label label-success'>Regulatory Compliance &amp; Audit <span class='icon-cross' data-id='22'></span></span>">
+                                    Regulatory Compliance &amp; Audit
+                                </option>
+                                <option value="23"
+                                        data-content="<span class='label label-success'>Secure Code Development <span class='icon-cross' data-id='23'></span></span>">
+                                    Secure Code Development
+                                </option>
+                                <option value="24"
+                                        data-content="<span class='label label-success'>SIEM <span class='icon-cross' data-id='24'></span></span>">
+                                    SIEM
+                                </option>
+                                <option value="25"
+                                        data-content="<span class='label label-success'>Smart card <span class='icon-cross' data-id='25'></span></span>">
+                                    Smart card
+                                </option>
+                                <option value="26"
+                                        data-content="<span class='label label-success'>Secure Architecture <span class='icon-cross' data-id='26'></span></span>">
+                                    Secure Architecture
+                                </option>
+                                <option value="27"
+                                        data-content="<span class='label label-success'>Penetration Testing <span class='icon-cross' data-id='27'></span></span>">
+                                    Penetration Testing
+                                </option>
+                                <option value="28"
+                                        data-content="<span class='label label-success'>Cyber Risk Management <span class='icon-cross' data-id='28'></span></span>">
+                                    Cyber Risk Management
+                                </option>
+                                <option value="29"
+                                        data-content="<span class='label label-success'>Cyber Security Sales Engineer <span class='icon-cross' data-id='29'></span></span>">
+                                    Cyber Security Sales Engineer
+                                </option>
+                            </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_industries">Services:</label><select
+                                    multiple="multiple" class="form-control industries costume" id="id_industries"
+                                    name="industries" placeholder="Services" required="">
+                                <option value="1"
+                                        data-content="<span class='label label-success'>Financial Services <span class='icon-cross' data-id='1'></span></span>">
+                                    Financial Services
+                                </option>
+                                <option value="2"
+                                        data-content="<span class='label label-success'>Insurance <span class='icon-cross' data-id='2'></span></span>">
+                                    Insurance
+                                </option>
+                                <option value="3"
+                                        data-content="<span class='label label-success'>Healthcare <span class='icon-cross' data-id='3'></span></span>">
+                                    Healthcare
+                                </option>
+                                <option value="4"
+                                        data-content="<span class='label label-success'>Education <span class='icon-cross' data-id='4'></span></span>">
+                                    Education
+                                </option>
+                                <option value="5"
+                                        data-content="<span class='label label-success'>Technology <span class='icon-cross' data-id='5'></span></span>">
+                                    Technology
+                                </option>
+                                <option value="6"
+                                        data-content="<span class='label label-success'>Public Sector <span class='icon-cross' data-id='6'></span></span>">
+                                    Public Sector
+                                </option>
+                                <option value="7"
+                                        data-content="<span class='label label-success'>Manufacturing <span class='icon-cross' data-id='7'></span></span>">
+                                    Manufacturing
+                                </option>
+                                <option value="8"
+                                        data-content="<span class='label label-success'>Fashion <span class='icon-cross' data-id='8'></span></span>">
+                                    Fashion
+                                </option>
+                                <option value="10"
+                                        data-content="<span class='label label-success'>Pharma <span class='icon-cross' data-id='10'></span></span>">
+                                    Pharma
+                                </option>
+                                <option value="9"
+                                        data-content="<span class='label label-success'>Agriculture <span class='icon-cross' data-id='9'></span></span>">
+                                    Agriculture
+                                </option>
+                            </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_certificates">Certificates:</label><select
+                                    multiple="multiple" class="form-control" id="id_certificates" name="certificates"
+                                    placeholder="Certificates">
+                                <option value="1">CISSP</option>
+                                <option value="2">   SSCP   </option>
+                                <option value="3">CCSP</option>
+                                <option value="4">   HCISSP   </option>
+                                <option value="5">CCFP</option>
+                                <option value="6">   CAP</option>
+                                <option value="7">   CSSLP</option>
+                                <option value="8">CND</option>
+                                <option value="9">   CEH</option>
+                                <option value="10">   ECSA</option>
+                                <option value="11">   CHFI   </option>
+                                <option value="12">CCISO</option>
+                                <option value="13">   CSCU   </option>
+                                <option value="14">CISA</option>
+                                <option value="15">   CISM</option>
+                                <option value="16">   CGEIT   </option>
+                                <option value="17">CRISC   </option>
+                                <option value="18">Security+   </option>
+                                <option value="19">CSA+   </option>
+                                <option value="20">CASP</option>
+                                <option value="21">   GSEC</option>
+                            </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><a href="#fourth-step--specialists"
+                                                        class="btn btn-info btn-next mas"> Next step</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="fourth-step--specialists" class="step fourth-step animated">
+                            <div class="step-count between"><span class="text">4</span></div>
+                            <legend><span> Please share your career success, experience, and education</span></legend>
+                            <div class="form-group "><label for="id_professional_summary">Professional
+                                summary:</label><textarea class="form-control" cols="40" id="id_professional_summary"
+                                                          maxlength="1000" name="professional_summary"
+                                                          placeholder="Professional summary" rows="5"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="past-experience"><label> Past Experience:</label><input
+                                    id="id_past_experience-TOTAL_FORMS" name="past_experience-TOTAL_FORMS" type="hidden"
+                                    value="1"/><input id="id_past_experience-INITIAL_FORMS"
+                                                      name="past_experience-INITIAL_FORMS" type="hidden"
+                                                      value="0"/><input id="id_past_experience-MIN_NUM_FORMS"
+                                                                        name="past_experience-MIN_NUM_FORMS"
+                                                                        type="hidden" value="0"/><input
+                                    id="id_past_experience-MAX_NUM_FORMS" name="past_experience-MAX_NUM_FORMS"
+                                    type="hidden" value="1000"/>
+                                <div class="formset-row">
+                                    <div class="clearfix"></div>
+                                    <div class="col-md-6 pln prs">
+                                        <div class="form-group  "><input class="form-control"
+                                                                         id="id_past_experience-0-position"
+                                                                         maxlength="100"
+                                                                         name="past_experience-0-position"
+                                                                         placeholder="Position" type="text"/>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 prn pls">
+                                        <div class="form-group  "><input class="form-control"
+                                                                         id="id_past_experience-0-company_name"
+                                                                         maxlength="100"
+                                                                         name="past_experience-0-company_name"
+                                                                         placeholder="Company name" type="text"/>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="row date-time">
+                                        <div class="col-xs-6 start-date">
+                                            <div class="form-group  ">
+                                                <div class="date"><input class="form-control"
+                                                                         id="id_past_experience-0-start_date"
+                                                                         name="past_experience-0-start_date"
+                                                                         placeholder="Start date" type="text"/></div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 end-date">
+                                            <div class="form-group  ">
+                                                <div class="date"><input class="form-control"
+                                                                         id="id_past_experience-0-end_date"
+                                                                         name="past_experience-0-end_date"
+                                                                         placeholder="End date" type="text"/></div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="form-group "><label for="id_education">Education:</label><textarea
+                                    class="form-control" cols="40" id="id_education" maxlength="1000" name="education"
+                                    placeholder="Education" rows="5"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><a href="#fifth-step--specialists"
+                                                        class="btn btn-info btn-next mas"> Next step</a></div>
+                        </div>
+                        <div id="fifth-step--specialists" class="step fifth-step animated">
+                            <div class="step-count between"><span class="text">5</span></div>
+                            <div class="form-group"><strong class="register-title">Please upload your professional
+                                picture and resume </strong></div>
+                            <div class="form-group  ">
+                                <div class="form-group  ">
+                                    <div class="input-group btn-file avatar-box" data-valid=img>
+                                        <div class="profile-userpic"><img src="/static/images/no-avatar.svg"
+                                                                          class="avatar dp img-responsive"
+                                                                          alt="Avatar"/></div>
+                                        <input type="text" class="form-control hide" placeholder="Choose file"
+                                               readonly=""><span
+                                            class="btn btn-primary btn-sm"><span>Browse image</span><span
+                                            class="hide-fild" data-valid=img><input class="form-control" id="id_avatar"
+                                                                                    name="avatar" placeholder="Avatar"
+                                                                                    type="file"/></span></span></div>
+                                    <span class="avatar-box help-block with-errors text-muted btn-file"></span><input
+                                        id="id_x" name="x" type="hidden"><input id="id_y" name="y" type="hidden"><input
+                                        id="id_width" name="width" type="hidden"><input id="id_height" name="height"
+                                                                                        type="hidden"></div>
+                            </div>
+                            <div class="form-group  "><!--pdf-->
+                                <div class="input-group btn-file" data-valid=cv><input type="text" class="form-control"
+                                                                                       placeholder="Upload your CV on pdf format"
+                                                                                       readonly=""><label
+                                        class="input-group-btn"><span
+                                        class="btn btn-primary"><span>Browse&hellip;</span><span class="hide-fild"
+                                                                                                 data-height=data-width=
+                                                                                                 data-size=1.0
+                                                                                                 data-valid=cv></span></span></label><input
+                                        name=cv type="file" class="form-control"
+                                        placeholder="Upload your CV on pdf format"></div>
+                                <span class="help-block with-errors text-muted btn-file"></span></div>
+                            <div class="text-center"><input type="submit" class="btn btn-info mas" value="Register">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="companies spec-user-form" id="companies">
+                        <div id="second-step--companies" class="step second-step animated">
+                            <div class="step-count between"><span class="text">2</span></div>
+                            <legend><span> Please provide us with information about your company</span></legend>
+                            <div class="form-group "><label for="id_company_name">Company name:</label><input
+                                    class="form-control" id="id_company_name" maxlength="50" name="company_name"
+                                    placeholder="Company name" type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_website_url">Website url:</label><input
+                                    class="form-control" id="id_website_url" maxlength="200" name="website_url"
+                                    placeholder="Website url" type="url" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_description">Description:</label><textarea
+                                    class="form-control" cols="40" id="id_description" maxlength="1000"
+                                    name="description" placeholder="Description" rows="5" required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><a href="#third-step--companies" class="btn btn-info btn-next mas">
+                                Next step</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="third-step--companies" class="step third-step animated">
+                            <div class="step-count between"><span class="text">3</span></div>
+                            <legend><span> Please provide your location information </span></legend>
+                            <input id="id_location-TOTAL_FORMS" name="location-TOTAL_FORMS" type="hidden"
+                                   value="1"/><input id="id_location-INITIAL_FORMS" name="location-INITIAL_FORMS"
+                                                     type="hidden" value="0"/><input id="id_location-MIN_NUM_FORMS"
+                                                                                     name="location-MIN_NUM_FORMS"
+                                                                                     type="hidden" value="1"/><input
+                                id="id_location-MAX_NUM_FORMS" name="location-MAX_NUM_FORMS" type="hidden" value="1"/>
+                            <div class="form-group "><label for="id_location-0-country">Country:</label><input
+                                    class="form-control" id="id_location-0-country" maxlength="100"
+                                    name="location-0-country" placeholder="Country" type="text" value="USA" readonly/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_location-0-state">State:</label><input
+                                    class="form-control" id="id_location-0-state" maxlength="100"
+                                    name="location-0-state" placeholder="State" type="text"/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_location-0-city">City:</label><input
+                                    class="form-control" id="id_location-0-city" maxlength="100" name="location-0-city"
+                                    placeholder="City" type="text"/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_phone">Phone:</label><input class="form-control"
+                                                                                                id="id_phone"
+                                                                                                maxlength="15"
+                                                                                                name="phone"
+                                                                                                pattern="\(?\d{3}\)?[-\.\*]? *\d{3}[-\.\*]? *-?\d{4}"
+                                                                                                placeholder="(541) 754-3010"
+                                                                                                type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><a href="#fourth-step--companies"
+                                                        class="btn btn-info  btn-next mas">Next step</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="fourth-step--companies" class="step fourth-step animated">
+                            <div class="step-count between"><span class="text">4</span></div>
+                            <div class="form-group "><label for="id_application_prerequisites">Please tell us what your
+                                company does:</label><input class="form-control" id="id_application_prerequisites"
+                                                            name="application_prerequisites"
+                                                            placeholder="Please tell us what your company does"
+                                                            type="text" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group "><label for="id_work_type">Are you looking for fulltime or part time
+                                help?</label><select class="form-control" id="id_work_type" name="work_type"
+                                                     placeholder="Are you looking for fulltime or part time help?"
+                                                     required></select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="text-center"><input type="submit" class="btn btn-info mas" value="Register">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="terms">
+                    By signing up, you agree to
+                    <br class="only-mobile"> the
+                    <a href="/terms/">Terms of Service</a>
+                    and
+                    <a href="/privacy/">Privacy Policy</a></p></div>
+            <div class="footer"><p>
+                Don't have an account?
+                <a href="/registration/">Sign Up</a></p></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/moment/moment.js"></script>
+<script type="text/javascript" src="static/js/plugin/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="static/js/plugin/bootstrap-validator.js"></script>
+<script type="text/javascript" src="static/js/plugin/bootstrap-notify.js"></script>
+<script type="text/javascript" src="static/js/plugin/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+<script type="text/javascript" src="static/js/formset.js"></script>
+<script type="text/javascript" src="static/js/past-experience.js"></script>
+<script>
+    $.notifyDefaults({
+        type: 'warning'
+    });
+</script>
+<link href="static/css/cropper.css" rel="stylesheet">
+<script type="text/javascript" src="static/js/cropper.min.js"></script>
+<script type="text/javascript" src="static/js/cropper-config.js"></script><!-- MODAL TO CROP THE IMAGE -->
+<div class="modal fade" id="modalCrop">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Crop the photo</h4></div>
+            <div class="modal-body"><img src="" id="image" style="max-width: 100%;"></div>
+            <div class="modal-footer">
+                <div class="btn-group pull-left" role="group">
+                    <button type="button" class="btn btn-primary js-zoom-in"><span
+                            class="glyphicon glyphicon-zoom-in"></span></button>
+                    <button type="button" class="btn btn-primary js-zoom-out"><span
+                            class="glyphicon glyphicon-zoom-out"></span></button>
+                </div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary js-crop-and-upload">Crop</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
