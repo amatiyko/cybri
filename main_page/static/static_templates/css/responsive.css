@@ -1,0 +1,544 @@
+@media (min-width: 1170px) and (max-width: 1200px) {
+    .upper-footer .footer-right.pull-right {
+        width: 70%;
+    }
+
+    .upper-footer .footer-btn {
+        width: 45%;
+    }
+
+    .navbar-default .nav li a {
+        padding: 14px 14px 13px;
+    }
+
+}
+
+@media (min-width: 960px) and (max-width: 1170px) {
+    .navbar-default .nav li a {
+        padding: 15px 8px;
+        font-size: 11px;
+    }
+
+    .navbar-default .nav li a[class*="btn-"] {
+        padding: 11px 7px;
+        font-size: 11px;
+        margin: 4px 5px;
+    }
+
+    .navbar-default .nav li a.btn-default {
+        padding: 10px 7px;
+    }
+
+    header .header-dashboard .dashboard {
+        max-width: 100%;
+    }
+
+    header .header-dashboard {
+        background: none;
+        max-width: 50%;
+    }
+
+    header .intro-text {
+        padding-top: 0px;
+    }
+
+    header .intro-text .intro-lead-in {
+        font-size: 41px;
+        /*line-height: 48px;*/
+    }
+
+    footer .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .upper-footer .footer-right.pull-right {
+        width: 70%;
+    }
+
+    .upper-footer .footer-btn {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 989px) {
+    .profile-userpic img,
+    #profile .profile-userpic img {
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+    }
+
+    .location,
+    .profile-userbuttons,
+    .profile-usertitle-job,
+    .profile-usertitle-name {
+        text-align: center;
+    }
+}
+
+@media (max-width: 960px) {
+    header .header-dashboard .dashboard {
+        max-width: 50%;
+        margin: 15px;
+        margin-bottom: 0;
+    }
+
+    #professionals .box {
+        max-width: 300px;
+        margin: 0 auto 10px;
+    }
+
+    .navbar-default .nav li a {
+        padding: 15px 10px;
+        font-size: 10px;
+    }
+
+    .navbar-default .nav li a[class*="btn-"] {
+        padding: 11px 9px;
+        font-size: 11px;
+        margin: 4px 5px;
+    }
+
+    .navbar-default .nav li a.btn-default {
+        padding: 10px 9px;
+    }
+
+    #headerbackground {
+        background-position: 90%;
+    }
+
+    header .header-dashboard {
+        background: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar-fixed-top {
+        padding: 8px 20px;
+    }
+
+    .navbar-fixed-top .page-scroll {
+        margin: 0;
+    }
+
+    .logo img {
+        height: 34px;
+        margin-top: 3px;
+
+    }
+
+    header .intro-text .intro-lead-in {
+        font-size: 40px;
+        letter-spacing: 0px;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    header .intro-text {
+        padding: 0px 20px 0 20px;
+        width: 100%;
+    }
+
+    header .container {
+        padding: 20vh 0 0vh;
+    }
+
+    .header-buttons {
+        margin: 20px auto 20px auto;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    header .intro-text .intro-heading {
+        font-size: 15px;
+        line-height: 21px;
+        margin-top: 0;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+
+    .header-buttons .secondary-button, .header-buttons .primary-button {
+        float: none;
+    }
+
+    section {
+        padding: 70px 0 50px 0;
+    }
+
+    section .section-subheading {
+        margin-bottom: 55px;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    p {
+        color: #666;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    .upper-footer .social {
+        margin-top: 20px;
+    }
+
+    .upper-footer .footer-btn {
+        float: right !important;
+    }
+
+    .map-block .section-subheading {
+        margin-bottom: 20px;
+    }
+
+    .map-block h2.section-heading {
+        margin-bottom: 0;
+        line-height: inherit;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .navbar-right {
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header-buttons .btn{
+        margin: 5px;
+    }
+    .navbar-default .nav li a[class*="btn-"] {
+        padding: 18px 17px;
+        font-size: 13px;
+        margin: 10px 0px;
+    }
+
+    .navbar-default .nav li a {
+        padding: 10px 0px;
+        font-size: 14px;
+
+    }
+
+
+    .boxed-tabs.cols-3 > li{
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .stepwizard-row,
+    .stepwizard.tab .stepwizard-step{
+        width: auto;
+        margin: 0 20px;
+        padding-left: 0;
+        display: block;
+    }
+
+    .stepwizard.tab .stepwizard-step a{
+        margin: 5px;
+        display: block;
+    }
+
+    #main-menu .nav li:first-child a {
+        margin-top: 20px;
+    }
+
+
+    .logo img {
+        margin-left: -7px;
+    }
+
+    .sub .navbar-nav {
+        margin: 0 -15px 0 0;
+    }
+
+    .navbar-nav {
+        margin: 0 0 0 0;
+    }
+
+    #sub-menu {
+        padding: 0;
+        margin: 0 -20px;
+    }
+
+    .navbar-default .navbar-collapse {
+        /*margin: 0px 0px 0 -20px;*/
+        padding: 0;
+        margin: 0;
+    }
+
+    #header .intro-text .intro-lead-in {
+        font-size: 28px;
+        line-height: 18px;
+    }
+
+
+
+    .navbar-fixed-top {
+        padding: 8px 20px;
+        border-bottom: 1px solid #222225;
+    }
+
+    .upper-footer .footer-right.pull-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .upper-footer .logo img {
+        margin: auto;
+    }
+
+    .upper-footer .pull-left {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .upper-footer .pull-left p {
+        text-align: center;
+        width: 80%;
+        margin: 0px auto 0;
+    }
+
+    .upper-footer .footer-right.pull-right {
+        width: 100%;
+    }
+
+    .footer-secondary-nav {
+        max-width: 100%;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer-nav {
+        float: none;
+    }
+
+    .footer-nav li,
+    .footer-nav {
+        float: none;
+        max-width: inherit;
+        display: block;
+    }
+
+    .footer-nav li {
+        width: 100%;
+    }
+
+    .upper-footer .social {
+        width: 237px;
+        margin: 0 auto;
+        float: inherit !important;
+    }
+
+    .footer-nav li a {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        text-align: center;
+        margin-top: 20px;
+        float: none !important;
+    }
+
+    .upper-footer p,
+    .footer-buttons h5{
+        text-align: center;
+        max-width: 100%;
+    }
+
+
+    .upper-footer h5{
+        text-align: center;
+    }
+
+    .upper-footer .footer-btn {
+        margin: 30px 0 40px;
+    }
+
+    #industries .img {
+        height: 160px;
+    }
+
+    .bg-wraper {
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+        max-width: inherit;
+        min-height: inherit;
+    }
+
+    .bg-wraper .user-name {
+        margin: 15px 0 0 10px;
+    }
+
+    #features #setup .insurance-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 23px 10px;
+    }
+
+    #work .stepwizard-step p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 106px;
+        margin: 0 auto;
+        height: 47px;
+    }
+
+    .stepwizard.tab .btn-circle{
+        height: 60px;
+    }
+
+    .stepwizard.tab .splash {
+        width: 100%;
+        height: 60px;
+        border-radius: 0;
+    }
+
+    .hex-wrapper.flip .hex .front span,
+    .hex-wrapper.flip .hex .front,
+    .hex-wrapper.flip .hex .back,
+    .hex-wrapper.flip {
+        width: 45px;
+        height: 45px;
+    }
+
+    .map-block .people .row {
+        text-align: center;
+        height: 37px;
+    }
+
+    .map-block .section-subheading {
+        font-size: 12px;
+        line-height: 13px;
+        margin-bottom: 14px;
+    }
+
+    .map-block h2.section-heading {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+
+    .map-block .people {
+        height: 249px;
+    }
+
+    .hex-wrapper.flip .hex .front span {
+        height: 132px;
+    }
+
+    #features p.description {
+        padding: 0 20px;
+    }
+
+    #features p.description br {
+        display: none;
+    }
+
+    #features .stepwizard-step {
+        display: block;
+        margin: 0 23px;
+    }
+
+    #id_user_type li label {
+
+    }
+
+    #subheader .intro-text .intro-lead-in {
+        margin: 77px 0 0;
+    }
+
+    #user-menu .navbar-right {
+        /*float: right !important;*/
+        /*margin-right: -30px;*/
+    }
+
+    #sub-menu .nav li a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    #user-menu .navbar-nav .open .dropdown-menu {
+        margin-top: 2px;
+        border: 1px #dddddd solid;
+    }
+
+    .navbar .container{
+        padding: 0;
+    }
+
+    #user-menu .navbar-nav .open .dropdown-menu > li > a, #user-menu .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .navbar-default.sub-head.sub-head a.create{
+        margin: 20px 0;
+        display: block;
+    }
+
+    .profile-userpic img,
+    #profile .profile-userpic img {
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+    }
+
+    .location,
+    .profile-userbuttons,
+    .profile-usertitle-job,
+    .profile-usertitle-name {
+        text-align: center;
+    }
+
+    .label {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    #header .intro-text .intro-lead-in {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .admin-bar .user-name {
+        display: none;
+    }
+
+    #header .header-info ul li:after {
+        display: none;
+        margin: 0 10px;
+    }
+
+    #header .header-info ul li {
+        display: block;
+    }
+
+    #work .stepwizard-step p {
+        width: auto;
+    }
+
+}
